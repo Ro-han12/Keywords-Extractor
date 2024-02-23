@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Text Extraction with OCR</title>
+    <title>Text & keyword Extraction with OCR</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
@@ -24,6 +24,19 @@
                 <button class="upload-btn" type="submit">Upload and Extract Text</button>
             </form>
         </div>
+        <h2>Extracted Keywords:</h2>
+    <div class="keywords">
+        {% if extracted_keywords %}
+            <ul>
+                {% for keyword in extracted_keywords %}
+                    <li>{{ keyword }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            No keywords extracted.
+        {% endif %}
+    </div>
+
         <div class="result-column">
             <h2>Extracted Text:</h2>
             <div class="result">

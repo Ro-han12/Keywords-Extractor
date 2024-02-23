@@ -8,5 +8,6 @@ seaborn
 pytesseract
 streamlit
 fitz 
+yake
 pillow
 spacy
