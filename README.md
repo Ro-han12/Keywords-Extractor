@@ -37,3 +37,9 @@ To run the application, ensure you have all the required libraries installed. Th
 ```bash
 streamlit run final.py
 ```
+##screenshots
+<img width="1440" alt="Screenshot 2024-02-25 at 7 25 04 PM" src="https://github.com/Ro-han12/PDFy-Texty/assets/95674406/20dc01bd-f244-48c5-9a22-d38d7b19aaaa">
+<img width="1440" alt="Screenshot 2024-02-25 at 7 24 50 PM" src="https://github.com/Ro-han12/PDFy-Texty/assets/95674406/5690944d-9c1d-43ab-b8cb-4d2a5d6eaaef">
+
+
+
