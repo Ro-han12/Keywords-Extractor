@@ -11,3 +11,6 @@ fitz
 yake
 pillow
 spacy
+google-generativeai 
+python-dotenv 
+pdf2image
