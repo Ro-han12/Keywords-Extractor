@@ -2,8 +2,10 @@ import streamlit as st
 from PIL import Image
 import pytesseract
 import io
+import sys
+import os
 from experiments.pdf_extract import extract_text_from_pdf
-from Utils.helper import allowed_file, save_uploaded_file
+from pdfy_utils.helper import allowed_file,save_uploaded_file
 import yake
 import os
 
@@ -85,9 +87,9 @@ def text_analysis_with_llm():
 
     genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-    model=genai.GenerativeModel("gemini-pro-vision")
+    model=genai.GenerativeModel("gemini-1.5-flash")
     def get_gemini_response(input,pdf_content,prompt):
-        model=genai.GenerativeModel('gemini-pro-vision')
+        model=genai.GenerativeModel('gemini-1.5-flash')
         response=model.generate_content([input,pdf_content[0],prompt])
         return response.text 
 
